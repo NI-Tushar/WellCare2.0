@@ -19,7 +19,15 @@
               <p>Dashboard <i class="right fas fa-angle-right"></i></p>
             </a>
           </li>
+
           @can('isAdmin')
+          <li class="nav-item">
+            <a href="{{ route('admin.manage.package') }}" class="nav-link">
+              <i class="fa-solid fa-house mr-1"></i>
+              <p>Packages</p>
+            </a>
+          </li>
+
           <li class="nav-item has-treeview {{ Route::is('admin.add-admin.create') || Route::is('admin.add-admin.index') ? 'menu-open' : '' }}">
             <a class="nav-link">
               <i class="fa-solid fa-braille mr-1"></i>
@@ -51,7 +59,7 @@
               <p>Webiste Hero <i class="right fas fa-angle-right"></i></p>
             </a>
           </li>
-        @endif
+          @endif
         @if(auth()->user()->role == 'Admin' || auth()->user()->role == 'Editor')
         <li class="nav-item">
           <a href="{{ route('admin.configuration.index') }}" class="nav-link {{ Route::is('admin.configuration.index') || Route::is('admin.configuration.edit')  ? 'active' : '' }}">

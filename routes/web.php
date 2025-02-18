@@ -11,6 +11,7 @@ use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserDashboardController;
 use App\Http\Controllers\FamilyMemberController;
+use App\Http\Controllers\PackagesController;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -126,13 +127,14 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
     Route::get('add-new-user/update/{admin}', [AdminController::class, 'edit'])->name('add-admin.edit');
     Route::put('add-new-user/update/{admin}', [AdminController::class, 'update'])->name('add-admin.update');
     Route::delete('add-new-user/destory/{admin}', [AdminController::class, 'destroy'])->name('add-admin.destroy');
-
-
-
-
+    
+    // package
+    Route::get('manage/packages', [AdminController::class, 'package'])->name('manage.package');
+    Route::get('add/new/packages', [AdminController::class, 'addPackage'])->name('add.package');
+    Route::post('added/new/packages', [AdminController::class, 'storePackage'])->name('store.package');
+    Route::delete('package/destory/{id}', [AdminController::class, 'delete'])->name('package.destroy');
 
 });
-
 
 
 require __DIR__.'/auth.php';

@@ -31,7 +31,11 @@
             
           <div class="collapsible-header">
               <div class="enr_img">
-                  <img src="{{ asset($job->user->image) }}" alt="">
+                  @if(!empty($job->user->image))
+                    <img src="{{ asset($job->user->image) }}" alt="">
+                  @else
+                    <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                  @endif
                 </div>
               <div class="header_info">
                 <div class="section_part">
