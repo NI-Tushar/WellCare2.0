@@ -1,0 +1,43 @@
+.whole_map_section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.667);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+.whole_map_section .centered_map{
+    max-width: 600px;
+    height: 400px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 5%;
+}
+.whole_map_section .centered_map .map_buttons{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.whole_map_section .centered_map .map_buttons button{
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+    font-size: 15px;
+}
+.whole_map_section .centered_map .map_buttons .cancel{
+    border: 0.5px solid var(--skin-color-1);
+    background-color: transparent;
+    cursor: pointer;
+}
+.whole_map_section .centered_map .map_buttons .hide_loc:hover{
+ background-color:  var(--skin-color-1);
+}
+.whole_map_section .centered_map .map_buttons .confirm{
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,578 @@
+.jobs_heading {
+    width: 100%;
+}
+.jobs_heading .giver_jobs_heading{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.jobs_heading .giver_jobs_heading h3,
+.jobs_heading .giver_jobs_heading p{
+    width: 100%;
+}
+.giver_jobs p{
+    color: rgba(0, 0, 0, 0.505);
+    font-size: 15px;
+}
+
+.giver_jobs_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 100%) 1fr;
+}
+
+.giver_jobs_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 35rem));
+    gap: 15px;
+    padding-bottom: 20px;           
+}
+.cards .no_post_msg{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.567);
+}
+/* _____________________________________ another formate */
+
+.jobs_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 75rem) 1fr;
+}
+
+.jobs_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 35rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;           
+}
+
+/* _____________________________________ another formate */
+
+
+ .cards .card {
+    margin: auto;
+    height: auto;
+    width: 98%;
+    min-height: auto;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 15px;
+    transition: transform 250ms;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.cards .card .post_num_div{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    background-color: var(--skin-color-1);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+ .cards .card .post_num_div p{
+    color: var(--white-color);
+    margin-top: 2px;
+}
+
+.cards .card .card_section{
+    padding-top: 10px;
+    min-height: 350px;
+    height: 100%;
+}
+
+ .cards .card:hover{
+    box-shadow: var(--skin-color-1) 0px 3px 8px;
+    /* transform: translateY(-10px); */
+}
+
+.cards .top_icon{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.cards .top_icon i{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.574);
+    cursor: pointer;
+}
+.cards .top_icon i:hover{
+    color: black;
+}
+.cards .job_heading{
+    display: flex;
+    height: auto;
+}
+.cards .job_heading .giver_img{
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.cards .job_heading .giver_img img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cards .job_heading .job_title{
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 100%;
+}
+.cards .job_heading .job_title h3{
+    font-size: 15px;
+    width: 100%;
+}
+.cards .job_heading .job_title p{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.746);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+.cards .job_heading .job_title p i{
+    margin-right: 3px;
+}
+.cards .job_heading .job_title ul{
+    display: flex;
+}
+.cards .job_heading .job_title ul li{
+    list-style: none;
+    margin-right: 3px;
+}
+.cards .job_heading .job_title ul li i{
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(234, 205, 52);
+}
+
+
+.cards .gen_amnt{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cards .gen_amnt p{
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600    ;
+}
+.cards .gen_amnt p i{
+    margin-right: 5px   ;
+}
+
+
+.cards .jobs_desc{
+    padding-bottom: 10px;
+    width: 100%;
+}
+.cards .jobs_desc p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.763);
+    width: 100%;
+    position: relative;
+    white-space: normal;
+    overflow: hidden;
+}
+.cards button{
+    border: 1px solid rgba(0, 0, 0, 0.763);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.655);
+    padding: 5px;
+    background: transparent;
+}
+.cards button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+.cards .accept_button{
+    padding-top: 15px;
+}
+.cards .accept_button button{
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: var(--white-color);
+    background-color: var(--skin-color-1);
+}
+.cards .accept_button .disabled{
+    background-color: rgb(95, 95, 95);
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    pointer-events: none; /* Prevent all interactions */
+    opacity: 0.6;
+}
+.cards .accept_button button:hover{
+    background-color: crimson;
+}
+
+
+
+.cards .bottom_icon{
+    display: flex;
+    padding-top: 15px;
+}
+.cards .bottom_icon .ago,
+.cards .bottom_icon .view{
+    width: 50%;
+}
+.cards .bottom_icon .ago p,
+.cards .bottom_icon .view p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.745);
+}
+.cards .bottom_icon .view p{
+    text-align: right;
+}
+.cards .bottom_icon .ago p i,
+.cards .bottom_icon .view p i{
+    margin-right: 5px;
+}
+
+/* ___________________________________ Accept div start */
+.accept_div{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* display: flex; */
+}
+.accept_div .acc_centered_div{
+    max-width: 450px;
+    height: auto;
+    background-color: aliceblue;
+    margin:auto;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.acc_centered_div i{
+    color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc_centered_div i:hover{
+    color: black;
+}
+.accept_div .acc_centered_div h2{
+    text-align: center;
+}
+.accept_div .acc_centered_div .fee_desc{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part i{
+    position:absolute;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.541);
+}
+.accept_div .acc_centered_div .fee_desc .fee_part i:hover{
+    color: black;
+}
+
+.accept_div .acc_centered_div .fee_desc .fee_part p{
+    text-align: center;
+    width: 100%;
+}   
+.accept_div .acc_centered_div .fee_desc .fee_part{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.accept_div .acc_centered_div .fee_desc .fee_part .fee1{
+    font-size: 13px;
+    font-weight: 600;
+    width: 85%;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part .fee2{
+    font-size: 15px;
+    font-weight: 700;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part .fee3{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.656);
+}
+
+
+.acc_centered_div .acc_text{
+    display: flex;
+    padding-top: 5px;
+}
+.acc_centered_div .acc_text .text_part p{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.737);
+}
+
+.acc_centered_div .acc_text .check{
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.acc_centered_div .acc_text .check input{
+    height: 17px;
+    width: 17px;
+    accent-color: var(--skin-color-1);
+}
+
+
+.acc_centered_div input[type="submit"]{
+    background-color: var(--skin-color-1);
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+
+.acc_centered_div input[type="submit"]:hover{
+    background-color: crimson;
+}
+
+
+/* ___________________________________ Accepted div start */
+.accepted_div{
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.accepted_div .accepted_centered_div{
+    max-width: 450px;
+    height: auto;
+    background-color: aliceblue;
+    margin:auto;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.accepted_centered_div i{
+    color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.accepted_centered_div i:hover{
+    color: black;
+}
+.accepted_div .accepted_centered_div h2{
+    text-align: center;
+    color: var(--skin-color-1);
+}
+
+
+.accepted_centered_div  p{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.737);
+    text-align: center;
+    padding: 30px;
+}
+
+
+.accepted_centered_div button{
+    background-color: var(--skin-color-1);
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+
+.accepted_centered_div button:hover{
+    background-color: crimson;
+}
+
+
+
+
+
+/* ______________________ */
+.giver_jobs_card .request_button{
+    padding-top: 15px;
+    display: flex;
+    gap:10px;
+}
+.giver_jobs_card .request_button button{
+    border: none;
+    width: 50%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    border: 1px solid var(--skin-color-1);
+}
+.giver_jobs_card .request_button button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+}
+/* ______________________ */
+
+.jobs_card .request_button{
+    padding-top: 15px;
+    display: flex;
+    gap:10px;
+}
+.jobs_card .request_button button{
+    border: none;
+    width: 50%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    border: 1px solid var(--skin-color-1);
+}
+.jobs_card .request_button button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+/* ____________________ active job cancel div start*/
+.cancel_div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.424);
+    z-index: 10;
+    display: none;
+}
+.cancel_div .centered_cancel{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.cancel_div .centered_cancel .fa-circle-xmark{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.465);
+    cursor: pointer;
+}
+.cancel_div .centered_cancel .fa-circle-xmark:hover{
+    color: black;
+}
+.cancel_div .centered_cancel .heading{
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cancel_div .centered_cancel p{
+    text-align: center;
+}
+.cancel_div .centered_cancel .cancel_form{
+    padding: 5px;
+    border-radius: 10px;
+}
+.cancel_div .centered_cancel .cancel_form label{
+    font-weight: 600;
+}
+.cancel_div .centered_cancel .cancel_form textarea{
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cancel_div .centered_cancel .cancel_form input[type="checkbox"]{
+    margin-right: 10px;
+}
+.cancel_div .centered_cancel .cancel_form .buttons{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding-top: 5px;
+}
+.cancel_div .centered_cancel .cancel_form .buttons input{
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid var(--skin-color-1);
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: aliceblue;
+}
+.cancel_div .centered_cancel .cancel_form .buttons input:hover{
+    background-color: var(--skin-color-1);
+}
+.cancel_div .centered_cancel .cancel_form .buttons input[type="submit"]{
+    background-color: var(--skin-color-1);
+}
+.cancel_div .centered_cancel .cancel_form .buttons input[type="submit"]:hover{
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+}
+/* ____________________ active job cancel div end*/

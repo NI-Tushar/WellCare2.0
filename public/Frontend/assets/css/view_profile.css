@@ -1,0 +1,72 @@
+.view_profile_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.view_profile_section .centered_view_profile{
+    height: auto;
+    max-width: 450px;
+    background-color: var(--white-color);
+    margin: auto;
+    padding: 3rem;
+    border-radius: 15px;
+    position: relative;
+}
+.view_profile_section .centered_view_profile .fa-circle-xmark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.466);
+}
+.view_profile_section .centered_view_profile .fa-circle-xmark:hover{
+    color: black;
+}
+.view_profile_section .centered_view_profile .profile_body .profile_img{
+    position: relative;
+    display: flex;
+}
+.view_profile_section .centered_view_profile .profile_body h2 i{
+    color: rgb(84, 197, 253);
+    font-size: 15px;
+}
+.view_profile_section .centered_view_profile .profile_body .profile_img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.view_profile_section .centered_view_profile .profile_body{
+    text-align: center;
+}
+.view_profile_section .centered_view_profile .profile_body p{
+    color: rgba(0, 0, 0, 0.562);
+    padding: 5px;
+}
+.view_profile_section .centered_view_profile .profile_body p i{
+    margin-right: 10px;
+}
+.view_profile_section .centered_view_profile .profile_body p .fa-star-half-stroke{
+    color: rgb(244, 191, 1);
+    font-size: 18px;
+}
+.view_profile_section .centered_view_profile .profile_body .summery_box{
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+.view_profile_section .centered_view_profile .profile_body .summery_box i{
+    color: black;
+}
+.view_profile_section .centered_view_profile .profile_body .summery_box .fa-bangladeshi-taka-sign{
+    margin-right: 1px;
+}

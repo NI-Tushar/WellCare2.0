@@ -1,0 +1,21 @@
+.create_post_button{
+    position: fixed;
+    right: 2%;
+    top: 80%;
+    z-index: 100;
+}
+.create_post_button button{
+    background-color: var(--skin-color-1);
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.create_post_button button:hover{
+    background-color: crimson;
+}

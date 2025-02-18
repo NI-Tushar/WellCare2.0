@@ -1,0 +1,63 @@
+.logout_section {
+    display: none;
+}
+.logout_section .center_logout{
+    width: 500px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+.logout_section .center_logout i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.logout_section .center_logout h3{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.logout_section .center_logout p{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.601);
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.logout_section .center_logout .logout_button{
+    display: flex;
+    width: 70%;
+    float:right;
+}
+.logout_section .center_logout .logout_button button{
+    margin: auto;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0.759);
+    font-weight: 600;
+}
+.logout_section .center_logout .logout_button button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+    border: var(--skin-color-1);
+}
+
+.logout_section .center_logout .logout_button form button{
+    border: none;
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+    border: 1px solid var(--skin-color-1);
+}
+.logout_section .center_logout .logout_button form button:hover{
+    background-color: crimson;
+    border: 1px solid crimson;
+}

@@ -1,0 +1,245 @@
+.jobs_heading {
+    width: 100%;
+}
+.jobs_heading .giver_jobs_heading{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.jobs_heading .giver_jobs_heading h3,
+.jobs_heading .giver_jobs_heading p{
+    width: 100%;
+}
+.giver_jobs p{
+    color: rgba(0, 0, 0, 0.505);
+    font-size: 15px;
+}
+
+.giver_jobs_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 100%) 1fr;
+}
+
+.giver_jobs_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 30rem));
+    gap: 15px;
+    padding-bottom: 20px;     
+}
+.cards .no_post_msg{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.567);
+}
+
+/* _____________________________________ another formate */
+
+
+.giver_jobs_card .cards .s_card {
+    height: auto;
+    width: 98%;
+    min-height: auto;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 15px;
+    transition: transform 250ms;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.giver_jobs_card .cards .s_card .post_num_div{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    background-color: var(--skin-color-1);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.giver_jobs_card.giver_jobs_card .cards .s_card .post_num_div p{
+    color: var(--white-color);
+    margin-top: 2px;
+}
+
+.giver_jobs_card .cards .s_card .card_section{
+    padding-top: 5px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.giver_jobs_card .cards .s_card:hover{
+    box-shadow: var(--skin-color-1) 0px 3px 8px;
+    /* transform: translateY(-10px); */
+}
+
+.giver_jobs_card .cards .top_icon{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.giver_jobs_card .cards .top_icon i{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.574);
+    cursor: pointer;
+}
+.cards .top_icon i:hover{
+    color: black;
+}
+.giver_jobs_card .cards .job_heading{
+    display: flex;
+    height: auto;
+}
+.giver_jobs_card .cards .job_heading .giver_img{
+    width: auto;
+    height: 100%;
+    position: relative;
+    margin-top: 20px;
+
+}
+.giver_jobs_card .cards .job_heading .giver_img img{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cards .job_heading .job_title{
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+.cards .job_heading .job_title h4{
+    font-size: 13px;
+    width: 100%;
+}
+.cards .job_heading .job_title p{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.746);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+.cards .job_heading .job_title p i{
+    margin-right: 3px;
+}
+.cards .job_heading .job_title ul{
+    display: flex;
+}
+.cards .job_heading .job_title ul li{
+    list-style: none;
+    margin-right: 3px;
+}
+.cards .job_heading .job_title ul li i{
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(234, 205, 52);
+}
+
+
+.cards .gen_amnt{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cards .gen_amnt p{
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600    ;
+}
+.cards .gen_amnt p i{
+    margin-right: 5px   ;
+}
+
+
+.cards .jobs_desc{
+    padding-bottom: 10px;
+    width: 100%;
+}
+.cards .jobs_desc p{
+    font-size: 12px;
+}
+.cards .jobs_desc p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.763);
+    width: 100%;
+    position: relative;
+    white-space: normal;
+    overflow: hidden;
+}
+.cards button{
+    border: 1px solid rgba(0, 0, 0, 0.763);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.655);
+    padding: 5px;
+    background: transparent;
+}
+.cards button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+
+.cards .accept_button{
+    padding-top: 15px;
+}
+.cards .accept_button button{
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: var(--white-color);
+    background-color: var(--skin-color-1);
+}
+.cards .accept_button .disabled{
+    background-color: rgb(95, 95, 95);
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    pointer-events: none; /* Prevent all interactions */
+    opacity: 0.6;
+}
+.cards .accept_button button:hover{
+    background-color: crimson;
+}
+
+
+
+.cards .bottom_icon{
+    display: flex;
+    padding-top: 15px;
+}
+.cards .bottom_icon .ago,
+.cards .bottom_icon .view{
+    width: 50%;
+}
+.cards .bottom_icon .ago p,
+.cards .bottom_icon .view p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.745);
+}
+.cards .bottom_icon .view p{
+    text-align: right;
+}
+.cards .bottom_icon .ago p i,
+.cards .bottom_icon .view p i{
+    margin-right: 5px;
+}
+

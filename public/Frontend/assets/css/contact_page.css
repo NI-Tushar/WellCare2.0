@@ -1,0 +1,152 @@
+.contact_section{
+    height: auto;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  
+  .contact_section .centered_banner{
+    height: auto;
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+  }
+  .contact_section .centered_banner .banner{
+    width: 50%;
+  }
+  .contact_section .centered_banner .banner .banner_text{
+    padding-left: 10px; 
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .contact_section .centered_banner .banner .banner_text h1{
+    font-size: 35px;
+  }
+  .contact_section .centered_banner .banner .banner_text p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 15px;
+  }
+  
+  .contact_section .centered_banner .banner .banner_text button{
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 15px;
+    letter-spacing: 2px;
+    border: 2px solid var(--skin-color-1);
+    color: var(--skin-color-1);
+    font-weight: 600;
+  }
+  .contact_section .centered_banner .banner .banner_text button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+  }
+  
+  
+  .contact_section .centered_banner .banner{
+    position: relative;
+  }
+  .contact_section .centered_banner .banner .banner_img img{
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+  
+     
+  @media screen and (max-width: 1000px) {
+      .contact_section .centered_banner .banner .banner_img img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 730px) {
+    .contact_section .centered_banner .banner .banner_img img{
+      display: none;
+    }
+    .contact_section .centered_banner{
+      display: block;
+    }
+    .contact_section .centered_banner .banner{
+      padding-bottom: 0px;
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .email_section{
+    background-color: rgb(234, 242, 239);
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .email_section .centered_banner .banner .email_side{
+    text-align: center;
+  }
+  .email_section .centered_banner .banner .email_side img{
+    max-width: 250px;
+    max-width: 250px;
+  }
+  .email_section .centered_banner .banner .email_side p{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+  
+  
+  .email_section .centered_banner .banner .email_form{
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+    padding: 45px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .email_section .centered_banner .banner .email_form form input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    height: 40px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+  .email_section .centered_banner .banner .email_form form .submit_btn{
+    width: 100%;
+    display: flex;
+  }
+  .email_section .centered_banner .banner .email_form form label{
+    font-size: 15px;
+  }
+  .email_section .centered_banner .banner .email_form form input[type=submit]{
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+  }
+  
+  .email_section .centered_banner .banner .email_form form input[type=submit]:hover{
+    background-color: crimson;
+  }
+  
+  

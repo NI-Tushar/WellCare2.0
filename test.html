@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="expandable-list">
+        <div class="expandable-item" onclick="toggle(0)">
+          <div class="expandable-header">
+            Expandable Item
+            <div class="expandable-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="expandable-body">
+            <p>
+              This is the expandable body!
+            </p>
+          </div>
+        </div>
+        <div class="expandable-item" onclick="toggle(1)">
+          <div class="expandable-header">
+            Expandable Item
+            <div class="expandable-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="expandable-body">
+            <p>
+              This is the expandable body!
+            </p>
+          </div>
+        </div>
+        <div class="expandable-item" onclick="toggle(2)">
+          <div class="expandable-header">
+            Expandable Item
+            <div class="expandable-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="expandable-body">
+            <p>
+              This is the expandable body!
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- __________________________ -->
+
+
+
+      <script>
+     toggle = (idx) => {
+        document.querySelectorAll('.expandable-item')[idx].classList.toggle('active');
+    };
+
+      </script>
+</body>
+</html>

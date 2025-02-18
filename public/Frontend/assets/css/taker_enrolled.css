@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(12, 47, 94);
+    height: 100%;
+    width: 100%;
+   position: relative;
+  }
+  .giver_jobs{
+    width: 100%;
+    display: flex;
+    height: auto;
+  }
+  .giver_jobs .giver_jobs_heading{
+    width: 50%;
+    margin: auto;
+    transition: 0.4s;
+  }
+  .giver_jobs .giver_jobs_heading p{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.531);
+  }
+  .enroll_container{
+    height: auto;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+} 
+.collapsible-header {
+    background: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    border-bottom: none;
+    display: flex;
+    position: relative;
+    border-left: 5px solid var(--skin-color-1);
+}
+
+  .expandable-list{
+    margin: 20px auto;
+    width: 50%;
+    overflow-y: auto;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 1500px){
+    .giver_jobs .giver_jobs_heading,
+    .expandable-list{
+      width: 100%;
+    }
+  }
+
+  
+  .expandable-item {
+    background: rgb(177, 177, 177);
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    height: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  
+  .expandable-item:first-of-type{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .expandable-item:last-of-type{
+    border-radius: 0 0 5px 5px;
+  
+  }
+  
+  .expandable-header {
+    position: relative;
+    height: 100%px;
+    font-weight: bolder;
+  }
+  
+  .expandable-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: rotateZ(45deg);
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    transition: all .3s;
+  }
+  
+  .expandable-item.active .expandable-icon{
+  transform: rotateZ(0);
+  }
+  
+  .expandable-icon .line {
+    width: 15px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .4s;
+  }
+  
+  
+ .expandable-body {
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+    padding: 0 1em;
+    transition: all .5s ease-in-out;
+    height: 0px;
+    border-left: 5px solid var(--skin-color-1);
+  }
+  
+  .expandable-item.active .expandable-body {
+    height: 170px;
+  }
+  
+  .expandable-item .expandable-body .drop_text{
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section{
+        background-color: aliceblue;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section p{
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.619);
+    }
+    .expandable-item .expandable-body .drop_text .drop_section label{
+    font-weight: 600;
+    color: black;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section ul{
+        display: flex;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section ul li{
+        list-style: none;
+    }
+
+
+
+
+  .expandable-item.active .expandable-icon .line:nth-child(1) {
+    transform: rotateZ(0deg);
+  }
+  
+  .expandable-item.active .expandable-icon .line:nth-child(2) {
+    transform: rotateZ(180deg);
+  }
+
+  
+  .expandable-item .expandable-body .expand_button{
+    position: relative;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .expandable-item .expandable-body .expand_button button{
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid var(--skin-color-1);
+    float: right;
+    border-radius: 7px;
+    color: var(--skin-color-1);
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .expandable-item .expandable-body .expand_button button:hover{
+    background-color: var(--skin-color-1);
+    color: aliceblue;
+  }
+
+
+
+.collapsible-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.collapsible-container .collapsible-section{
+    margin-bottom: 25px;
+    border-left: 5px solid var(--skin-color-1);
+}
+  
+
+.collapsible-header .enr_img{
+    padding: 5px;
+}
+.collapsible-header .enr_img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.collapsible-header .header_info{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.collapsible-header .header_info .section_part{
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.collapsible-header .header_info .section_part label{
+    color: rgba(0, 0, 0, 0.674);
+    font-size: 12px;
+    font-weight: 600;
+} 
+.collapsible-header .header_info .section_part p{   
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+    .collapsible-header .down_icon{
+        background-color: rgb(212, 212, 212);
+        display: flex;
+        position: relative;
+        text-align: center;
+        height: 100%;
+    }
+    .collapsible-header .down_icon i{
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.493);
+    }
+    .collapsible-header .down_icon i:hover{
+        color: black;
+    }
+
+
+
+    @media screen and (max-width: 720px){
+      .collapsible-header .enr_img img{
+        height: 40px;
+        width: 40px;
+      }
+      .collapsible-header .header_info .section_part label{
+        font-size: 9px;
+      } 
+      .collapsible-header .header_info .section_part p{   
+        font-size: 10px;
+      }
+      .expandable-item.active .expandable-body {
+        height: 310px;
+      }
+      .expandable-item .expandable-body .drop_text{
+        display: block;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section label{
+      font-size: 12px;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section p{
+      font-size: 10px;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section{
+      margin-bottom: 10px;
+    }
+    .expandable-item .expandable-body .drop_text .drop_section li i{
+      font-size: 12px;
+    }
+    .expandable-item .expandable-body .expand_button button{
+      padding-bottom: 2px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: 500;
+    }
+    .expandable-item .expandable-body .expand_button{
+      padding-bottom:10px;
+    }
+  }

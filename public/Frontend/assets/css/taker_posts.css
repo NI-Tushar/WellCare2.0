@@ -1,0 +1,539 @@
+
+
+
+.giver_jobs {
+    width: 100%;
+}
+.giver_jobs .giver_jobs_heading{
+    max-width: 75rem;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.giver_jobs p{
+    color: rgba(0, 0, 0, 0.505);
+    font-size: 15px;
+}
+
+.jobs_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 75rem) 1fr;
+}
+
+.jobs_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 35rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;           
+}
+
+
+.jobs_card .cards .card {
+    margin: auto;
+    height: auto;
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 15px;
+    transition: transform 250ms;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.cards .card .card_section{
+    padding-top: 10px;
+    min-height: 300px;
+    height: 100%;
+}
+.jobs_card .cards .card .post_num_div{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    background-color: var(--skin-color-1);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.jobs_card .cards .card .post_num_div p{
+    color: var(--white-color);
+    margin-top: 2px;
+}
+
+.jobs_card .cards .card:hover{
+    box-shadow: var(--skin-color-1) 0px 3px 8px;
+    /* transform: translateY(-10px); */
+}
+
+.jobs_body .top_icon{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.jobs_body .top_icon i{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.574);
+}
+.jobs_body .top_icon i:hover{
+    color: black;
+}
+.jobs_body .job_heading{
+    display: flex;
+    height: auto;
+}
+.jobs_body .job_heading .giver_img{
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.jobs_body .job_heading .giver_img img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.jobs_body .job_heading .job_title{
+    padding-left: 10px;
+    width: 100%;
+}
+.jobs_body .job_heading .job_title .name{
+    display: flex;
+    max-width: 350px;
+}
+@media screen and (max-width: 600px) {
+    .jobs_body .job_heading .job_title .name{
+        display: block;
+    }
+}
+.jobs_body .job_heading .job_title .name p{
+    font-weight: 800;
+    width: 30%;
+    color: black;
+}
+.jobs_body .job_heading .job_title .name p i{
+    color: green;
+}
+.jobs_body .job_heading .job_title h3{
+    width: 70%;
+    font-size: 15px;
+}
+.jobs_body .job_heading .job_title p{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.746);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+.jobs_body .job_heading .job_title p i{
+    margin-right: 3px;
+}
+.jobs_body .job_heading .job_title ul{
+    display: flex;
+    padding-bottom: 10px;
+}
+.jobs_body .job_heading .job_title ul li{
+    list-style: none;
+    margin-right: 3px;
+}
+.jobs_body .job_heading .job_title ul li i{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(234, 205, 52);
+}
+.jobs_body .job_heading .job_title .experiance{
+    background-color: var(--skin-color-1);
+    width: fit-content;
+    padding: 5px;
+    color: var(--white-color);
+    border-radius: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.jobs_body .gen_amnt{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.jobs_body .gen_amnt p{
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600    ;
+}
+.jobs_body .gen_amnt P .price_by{
+    color: rgba(0, 0, 0, 0.671);
+}
+.jobs_body .gen_amnt p i{
+    margin-right: 5px   ;
+}
+
+
+.jobs_body .jobs_desc{
+    padding-bottom: 10px;
+}
+.jobs_body .jobs_desc p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.763);
+}
+.jobs_body button{
+    border: 1px solid rgba(0, 0, 0, 0.763);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.655);
+    padding: 5px;
+    background: transparent;
+}
+.jobs_body button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+.jobs_body .accept_button{
+    padding-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.jobs_body .accept_button button{
+    width: 50%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.jobs_body .accept_button .active{
+    border: none;
+    color: var(--white-color);
+    background-color: var(--skin-color-1);
+}
+.jobs_body .accept_button .active:hover{
+    background-color: crimson;
+}
+
+.jobs_body .accept_button .non-active{
+    border: 1px solid var(--skin-color-1);
+    color: black;
+}
+.jobs_body .accept_button .non-active:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+}
+.jobs_body .accept_button .offer_sent{
+    border: 2px solid rgba(0, 0, 0, 0.442);
+    color: rgba(0, 0, 0, 0.442);
+}
+.jobs_body .accept_button .offer_sent:hover{
+    background-color: rgba(0, 0, 0, 0.442);
+    color: aliceblue;
+}
+
+
+
+.jobs_body .bottom_icon{
+    display: flex;
+    padding-top: 15px;
+}
+.jobs_body .bottom_icon .ago,
+.jobs_body .bottom_icon .view{
+    width: 50%;
+}
+.jobs_body .bottom_icon .ago p,
+.jobs_body .bottom_icon .view p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.745);
+}
+.jobs_body .bottom_icon .view p{
+    text-align: right;
+}   
+.jobs_body .bottom_icon .ago p i,
+.jobs_body .bottom_icon .view p i{
+    margin-right: 5px;
+}
+
+
+
+
+/* ___________________________________ Service offer Details div start */
+.service_offer_div{
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    display: none;
+}
+.service_offer_div .centered_service{
+    width: 900px;
+    height: auto;
+    background-color: aliceblue;
+    margin:auto;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+}
+
+.service_offer_div .centered_service .fa-circle-xmark{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.644);
+}
+.service_offer_div .centered_service .fa-circle-xmark:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+padding: 0 16px;
+}
+.col-50 h4{
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+.service_container {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px 20px 20px;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.service_container h3{
+    text-align: center;
+}
+
+.service_container .option_div{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.service_container .option_div .option_desc{
+    padding-left: 10px;
+    width: 90%;
+}
+.service_container .option_div i{
+    font-size: 25px;
+    margin: auto;
+}
+.service_container .option_div .option_desc h3,
+.service_container .option_div .option_desc p{
+    margin: 0;
+    padding: 0;
+}
+.service_container .option_div .option_desc p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.568);
+}
+.service_container .option_div .option_desc h3{
+    font-size: 14px;
+    font-weight: 800;
+}
+.error_msg{
+    color: red;
+    margin-top: -15px;
+}
+
+.row .offer_time{
+    border: 1px soli darkred;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  .row .offer_time .block{
+    width: 50%;
+  }
+
+textarea{
+    resize: vertical;
+}
+select,
+textarea,
+input[type=number],
+input[type=time],
+input[type=date],
+input[type=file],
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/* Hide the arrows in Webkit-based browsers (Chrome, Safari, etc.) */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+p,
+label {
+    margin-bottom: 3px;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+}
+label span{
+    color: red;
+    font-size: 18px;
+}
+
+
+.icon-container {
+margin-bottom: 20px;
+padding: 7px 0;
+font-size: 24px;
+}
+.service_container form input[type=submit]{
+width: 100%;
+font-size: 13px;
+background-color:var(--skin-color-1);
+}
+
+.service_container .btn {
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.service_container .btn:hover {
+    background-color: crimson;
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+float: right;
+color: grey;
+}
+
+@media (max-width: 800px) {
+.row {
+    flex-direction: column;
+}
+.col-25 {
+  margin-bottom: 20px;
+}
+}
+
+
+
+/* ___________________________________ Service offer Details div end */
+
+
+
+
+
+/* ______________________ */
+.jobs_body .request_button{
+    padding-top: 15px;
+    display: flex;
+    gap:10px;
+}
+.jobs_body .request_button button{
+    border: none;
+    width: 50%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    border: 1px solid var(--skin-color-1);
+}
+.jobs_body .request_button button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+}
+/* ______________________ */
+
+
+
+
+
+
+

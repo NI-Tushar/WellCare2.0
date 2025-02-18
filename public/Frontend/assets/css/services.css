@@ -1,0 +1,109 @@
+.service_section {
+    background-color:hsla(0,0%,100%,1);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(170,0%,100%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(149,91%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(354,9%,97%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(178,87%,85%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(149,61%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(240,64%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(156,68%,82%,1) 0px, transparent 50%);
+
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.service_section h2{
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.service_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 900px) 1fr;
+}
+
+.service_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.service_card .cards .card {
+    padding-top: 10px;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 15px;
+    transition: transform 250ms;
+}
+
+.service_card .cards .card:hover{
+    transform: translateY(-10px);
+}
+
+.service_card .cards .card .service_body{
+    background-color: var(--white-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 330px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service_card .cards .card .service_part{
+    height: 50%;
+    width: 100%;
+}
+.service_card .cards .card .service_part img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service_card .cards .card .service_part h3{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.service_card .cards .card .service_part h3,p{
+    text-align: center;
+}
+.service_card .cards .card .service_part p{
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.718);
+}
+
+
+@media screen and (max-width: 840px) {
+    .service_section h2{
+        margin: auto;
+        max-width: 530px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .service_section h2{
+        text-align: center;
+    }
+}

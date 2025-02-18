@@ -1,0 +1,95 @@
+.giver_section {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.giver_section h2{
+    text-align: center;
+    margin: auto;
+    max-width: 75rem;
+    font-size: 25px;
+    font-weight: 800;
+}
+.giver_card {
+    padding-top: 20px;
+    width: 100%;
+      display: grid;    
+      grid-template-columns: 1fr minmax(300px, 1300px) 1fr;
+    }
+    
+    .giver_card .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
+        gap: 1rem;
+        justify-content: center;
+        padding-bottom: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+  
+    .giver_card .cards .card {
+        padding-top: 10px;
+        margin: auto;
+        height: auto;
+        width: 100%;
+        position: relative;
+        margin-top: 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 200ms ease-in;
+        border: none;
+    }
+
+    
+    .giver_card .cards .card .giver_img {
+        width: 100%;
+        display: flex;
+    }
+    .giver_card .cards .card .giver_img img{
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .giver_card .cards .card .giver_img img:hover{
+        box-shadow: var(--skin-color-1) 0px 5px 15px;
+    }
+    .giver_card .cards .card p{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 5px;
+        font-weight: 900;
+        font-size: 18px;
+    }
+    .giver_card .cards .card .status{
+        font-weight: 500;
+        font-size: 13px;
+        color: red;
+    }
+    .giver_card .cards .card .online{
+        color: green;
+    }
+
+
+    @media screen and (max-width: 1220px) {
+        .giver_section h2{
+            max-width: 850px;
+        }
+    }
+    @media screen and (max-width: 895px) {
+        .giver_section h2{
+            max-width: 700px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .giver_section h2{
+            text-align: center;
+        }
+    }

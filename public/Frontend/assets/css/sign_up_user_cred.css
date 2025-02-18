@@ -1,0 +1,453 @@
+
+
+.sign_up_opt_section{
+    width: 100%;
+    height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+}
+
+.sign_up_opt_section .centered_option{
+  max-width: 50rem;
+  width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* background-color:hsla(161,20%,57%,1);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(28,30%,82%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189,10%,88%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(354,8%,89%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340,35%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242,15%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343,32%,82%,1) 0px, transparent 50%); */
+}
+
+
+
+
+  .sign_up_opt_section .centered_option .option_div{
+      padding-top: 1rem;
+      width: 100%;
+    }
+    
+    .sign_up_opt_section .centered_option h3{
+      text-align: center;
+    }
+
+
+/* _____________________________ option card */
+.option_div .option_card {
+        padding-top: 5px;
+        width: 100%;
+        display: grid;    
+        grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+    }
+    
+    .option_div .option_card .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+        gap: 1rem;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    
+    
+    .option_div .option_card .cards .card {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        position: relative;
+        margin-top: 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 200ms ease-in;
+        border: none;
+        background-color: var(--white-color);
+        border-radius: 5px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .option_div .option_card .cards .card .card_body{
+        height: 100%;
+        width: 100%;
+    }
+    .option_div .option_card .cards .card input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .option_div .option_card .cards input[type="radio"]:checked ~ .card_body {
+        background-color: var(--skin-color-1);
+        color: var(--white-color);
+    }
+    .option_div .option_card .cards .card:hover{
+        box-shadow: rgb(49, 129, 97) 0px 1px 2px 0px, rgb(49, 129, 97) 0px 1px 3px 1px;
+    }
+    .option_div .option_card .cards .card .opt_img{
+        width: 100%;
+        display: flex;
+    }
+    .option_div .option_card .cards .card .opt_img img{
+        margin: auto;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .option_div .option_card .cards .card p{
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 5px;
+
+    }
+/* _____________________________ option card */
+
+
+.form_pass{
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 430px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-container .error_msg{
+    color: red;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+
+.form_pass input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: rgb(245, 245, 245);
+}
+.form_pass .input_field{
+    padding-bottom: 15px;
+}
+.form-container .error_msg{
+    color: red;
+}
+.form_pass .repass{
+position: relative;
+}
+.form_pass .repass span{
+    position: absolute;
+    font-size: 12px;
+    width: 60px;
+    top: 0px;
+    right: 3px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.644);
+    border-left: 1px solid rgba(0, 0, 0, 0.346);
+    height: 25px;
+    padding-top: 4px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+.form_pass .repass span:hover{
+    color: black;
+}
+
+.centered_option p{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.centered_option p a{
+    background-color: var(--skin-color-1);
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+.centered_option p a:hover{
+    background-color: crimson;
+}
+
+
+
+.sign_up_opt_section .centered_option .next_section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    height: auto;
+}
+.sign_up_opt_section .centered_option .next_section .step{
+    width: 130px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.sign_up_opt_section .centered_option .next_section .step p{
+    margin: 0;
+    margin-top: 7px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+}
+.sign_up_opt_section .centered_option .next_section .next{
+    position: absolute;
+    right: 0px;
+}
+
+.sign_up_opt_section .centered_option .next_section input[type="submit"],
+.sign_up_opt_section .centered_option .next_section .next_btn{
+    width: 130px;
+    height: 35px;
+    background-color: var(--skin-color-1);
+    border-radius: 50px;
+    border: none;
+    color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+.sign_up_opt_section .centered_option .next_section input[type="submit"]:hover{
+    background-color: crimson;
+}
+
+
+.sign_up_opt_section .centered_option .next_section button{
+    width: 130px;
+    height: 35px;
+    background-color: var(--skin-color-1);
+    border-radius: 50px;
+    border: none;
+    color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+.sign_up_opt_section .centered_option .next_section button:hover{
+    background-color: crimson;
+}
+
+
+.sign_up_opt_section .centered_option .next_section .next .disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+
+
+
+/* _____________________________ password requirements */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.form-container {
+    height: 100%;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #form {
+    padding: 1rem;
+    /* padding-top: 3rem; */
+    /* padding-bottom: 3rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+  }
+  
+  .input-container {
+    background-color: #f5f5f5;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    height: 56px;
+    transition: background-color 500ms; 
+  }
+  
+  .input-container:hover {
+    background-color: #ececec;
+  }
+  
+  .input-container:focus-within {
+    background-color: #dcdcdc;
+  }
+  
+  label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    transform-origin: left top;
+    user-select: none;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    caret-color: var(--accent-color);
+    border: 1px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.42);
+    color: rgba(0, 0, 0, 0.87);
+    transition: border 500ms;
+    padding: 20px 16px 6px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--accent-color);
+  }
+  
+  input:focus + label {
+    color: var(--accent-color);
+  }
+  
+  input:focus + label,
+  input.is-valid + label {
+    transform: translateY(-100%) scale(0.75);
+  }
+  
+  input[type=submit] {
+    transition: .25s;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 14px;
+  }
+  
+  input[type=submit]:disabled {
+    color: #808080;
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  input[type=submit]:not(:disabled):hover {
+    border-color: transparent;
+    background-color: var(--accent-color-opaque);
+    color: var(--accent-color);
+  }
+  
+  .submit-container {
+    border-radius: 4px;
+    margin-top: 1rem;
+    height: 56px;
+  }
+  
+  .show-password {
+    transition: opacity .25s;
+    position: absolute;
+    background-color: transparent;
+    right: 5px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    border: none;
+    font-size: 10px;
+    color: grey;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+  }
+  
+  .show-password:hover,
+  .show-password:focus {
+    color: black;
+  }
+  
+  .input-container:not(:hover, :focus-within) .show-password {
+    opacity: 0;
+  }
+  
+  .password-requirements {
+      margin-top: -2rem;
+    }
+    
+.password-requirements .part{
+    display: flex;
+    width: 100%;
+  }
+  .password-requirements .requirements_part{
+      width: 50%;
+  }
+
+  @media screen and (max-width: 840px) {
+    .password-requirements .part{
+      display: block;
+    }
+    .password-requirements .requirements_part{
+        width: 100%;
+    }
+  }
+  .password-requirements .requirement {
+      font-size: 14px;
+      flex: 1 0 50%;
+      text-align: left;
+    }
+
+  
+  .requirement:before {
+    content: '\2022';
+    padding-right: 5px;
+    font-size: 1.6em;
+    position: relative;
+    top: .15em;
+  }
+  
+  .requirement:not(.valid) {
+    color: #808080;
+  }
+  
+  .requirement.valid {
+    color: #4CAF50;
+  }
+  
+  .requirement.valid:before {
+    content: '\2713';
+    /* content: '\2714'; */
+  }
+  
+  .requirement.error {
+    color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }

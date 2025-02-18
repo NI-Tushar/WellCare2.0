@@ -1,0 +1,97 @@
+.share_profile_section{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 100;
+    display: none;
+}
+.share_profile_section .centered_share_profile{
+    margin: auto;
+    height: auto;
+    width: 400px;
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.share_profile_section .centered_share_profile .fa-circle-xmark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.53);
+    cursor: pointer;
+}
+.share_profile_section .centered_share_profile .fa-circle-xmark:hover{
+    color: black;
+}
+.share_profile_section .centered_share_profile h2{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.share_profile_section .centered_share_profile .social_logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.share_profile_section .centered_share_profile .social_logo ul{
+    display: flex;
+    gap: 10px;
+}
+.share_profile_section .centered_share_profile .social_logo ul li{
+    background-color: white;
+    border-radius: 50%;
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+}
+.share_profile_section .centered_share_profile .social_logo ul li i{
+    font-size: 40px;
+    margin: auto;
+}
+.share_profile_section .centered_share_profile .social_logo ul li .fa-code{
+    font-size: 30px;
+    color: black;
+} 
+.share_profile_section .centered_share_profile .social_logo ul li .fa-whatsapp{
+    color: rgb(96, 214, 105);
+
+}
+.share_profile_section .centered_share_profile .social_logo ul li .fa-linkedin{
+    color:rgb(11, 105, 199);
+}
+.share_profile_section .centered_share_profile .social_logo ul li .fa-square-x-twitter{
+    color:black;
+}
+
+
+
+
+.share_profile_section .centered_share_profile .link_copy{
+    display: flex;
+    margin-top: 20px;
+    gap:5px;
+}
+.share_profile_section .centered_share_profile .link_copy input{
+    width: 100%;
+    border: 0.2px solid rgba(0, 0, 0, 0.297);
+    overflow: hidden;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: var(--white-color);
+}
+.share_profile_section .centered_share_profile .link_copy button{
+    background-color: var(--skin-color-1);
+    padding: 5px;
+    color: var(--white-color);
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}

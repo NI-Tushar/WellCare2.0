@@ -1,0 +1,121 @@
+.pro_plan_section{
+    height: auto;
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.pro_plan_section .pro_plan_heading{
+    max-width: 75rem;
+    margin: auto;
+}
+.pro_plan_section .pro_plan_heading h2{
+    padding-bottom: 20px;
+}
+
+
+.pro_plan_card {
+    padding-top: 40px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 75rem) 1fr;
+}
+
+.pro_plan_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 20px;           
+}
+
+
+.pro_plan_card .cards .card {
+    margin: auto;
+    height: 500px;
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 20px;
+    transition: transform 250ms;
+    border: 1px solid black;
+}
+.pro_plan_card .cards .active{
+    background-color: rgb(49, 129, 97);
+}
+.pro_plan_card .cards .card .pro_body{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+.pro_plan_card .cards .card .pro_body h2{
+    font-weight: 500;
+}
+
+.pro_plan_card .cards .active .pro_body h1,
+.pro_plan_card .cards .active .pro_body h2{
+    color: aliceblue;
+}
+.pro_plan_card .cards .card .pro_body h1{
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.pro_plan_card .cards .card .pro_body h1 i{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.pro_plan_card .cards .card .subscribe_box{
+    border-top: 1px solid rgba(0, 0, 0, 0.211);
+    padding-top: 20px;
+}
+.pro_plan_card .cards .card .subscribe_box button{
+    padding: 7px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.pro_plan_card .cards .card .subscribe_box button:hover{
+    background-color: transparent;
+    color: black;
+}
+.pro_plan_card .cards .active .subscribe_box button{
+    background-color: aliceblue;
+    color: black;
+}
+.pro_plan_card .cards .active .subscribe_box button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.pro_plan_card .cards .card .subscribe_box ul{
+    padding-top: 20px;
+}
+.pro_plan_card .cards .card .subscribe_box ul li{
+    list-style: none;
+    display: flex;
+    color: rgba(0, 0, 0, 0.526);
+    font-weight: 600;
+    font-size: 15px;
+}
+.pro_plan_card .cards .active .subscribe_box ul li{
+    color: aliceblue;
+}
+.pro_plan_card .cards .card .subscribe_box ul li .icon{
+    padding-right: 10px;
+    margin: auto;
+    color: black;
+}
+.pro_plan_card .cards .active .subscribe_box ul li .icon{
+    color: aliceblue;
+}
