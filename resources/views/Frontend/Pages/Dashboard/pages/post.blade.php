@@ -43,8 +43,12 @@
 
                         <div class="job_heading">
                             <div class="giver_img">
-                            <!-- <img src="{{url('avatar.png')}}" alt=""> -->
-                            <img src="{{ asset(auth()->user()->image) }}" alt="">
+                            @if(!empty(auth()->user()->image))
+                                <img src="{{ asset(auth()->user()->image) }}" alt="User Image">
+                            @else
+                                <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                            @endif
+
                         </div>
                         <div class="job_title">
                             <h4>{{$post->title}}</h4>

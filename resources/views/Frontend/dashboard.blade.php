@@ -43,7 +43,13 @@
             <div class="card_section">
                 <div class="job_heading">
                     <div class="giver_img">
-                        <img src="{{ asset($giver_ac->image) }}" alt="">
+
+                        @if(!empty($giver_ac->image))
+                            <img src="{{ asset($giver_ac->image) }}" alt="">
+                        @else
+                            <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                        @endif
+
                     </div>
                     <div class="job_title">
                         <div class="name"><h3>{{$giver_ac->name}}</h3><p><i class="fa-solid fa-circle"></i>Online</p></div>
@@ -135,7 +141,7 @@
         <i onclick="showProfile()" class="fa-solid fa-circle-xmark"></i>
         <div class="profile_body">
             <div class="profile_img">
-                <img id="img_elem" src="{{ asset('avatar.png') }}" alt="">
+                <img id="img_elem" src="{{ asset('no_pro_img.png') }}" alt="Default Image">
             </div>
             <h2><span id="name_elem"></span> <span><i class="fa-solid fa-circle-check"></i></span></h2>
             <p><i class="fa-solid fa-location-dot"></i><span id="address_elem"></span></p>
@@ -304,16 +310,19 @@
     function showProfile(image, name, address, budget, created_at) {
         var p = document.getElementById("view_profile_section");
         // ________ elements id
-        var img_elem = document.getElementById("img_elem");
-        var imgPath = "{{ asset('') }}" + image; // Concatenate asset path with the image parameter
-        img_elem.src = imgPath;
+        // if(image != null){
+        //     var img_elem = document.getElementById("img_elem");
+        //     var imgPath = "{{ asset('') }}" + image; // Concatenate asset path with the image parameter
+        //     img_elem.src = imgPath;
+        //     img_elem.textContent = image;
+        // }
 
         var name_elem = document.getElementById("name_elem");
         var address_elem = document.getElementById("address_elem");
         var amount_elem = document.getElementById("amount_elem");
         var date_elem = document.getElementById("date_elem");
 
-        img_elem.textContent = image;
+   
 
         name_elem.textContent = name;
         address_elem.textContent = address;

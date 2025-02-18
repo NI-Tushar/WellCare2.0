@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Models\Packages;
 use App\Http\Requests\StoreAdminRequest;
 use App\Http\Requests\UpdateAdminRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -18,6 +20,38 @@ class AdminController extends Controller
         return view('Backend.Pages.Admin.index', compact('admins'));
     }
 
+    // ______________________________ PACKAGE FUNCTION START
+    public function package()
+    {
+        $packages = Packages::latest()->get();
+        return view('Backend.Pages.Admin.package', compact('packages'));
+    }
+    public function addPackage()
+    {
+        return view('Backend.Pages.Admin.addPackage');
+    }
+    public function storePackage(Request $request)
+    {
+        $add_package= new Packages();
+        $add_package->name= $request->name;
+        $add_package->apply= $request->apply;
+        $add_package->price= $request->price;
+        $add_package->save();
+        return redirect()->route('admin.manage.package');
+    }
+    public function delete($id)
+    {
+        $package = Packages::find($id);
+        if ($package) {
+            $package->delete();
+            $this->notificationMessage('Package Deleted Successfully!');
+            return redirect()->route('admin.manage.package');
+        } else {
+            $this->notificationMessage('Package Deleted Successfully!');
+            return redirect()->route('admin.manage.package');
+        }
+    }
+    // ______________________________ PACKAGE FUNCTION END
     /**
      * Show the form for creating a new resource.
      */

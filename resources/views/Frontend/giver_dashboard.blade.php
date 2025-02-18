@@ -43,7 +43,11 @@
                     <div class="card_section">
                         <div class="job_heading">
                             <div class="giver_img">
-                                <img src="{{ asset($post->user->image) }}" alt="">
+                                @if(!empty($job->user->image))
+                                    <img src="{{ asset($post->user->image) }}" alt="">
+                                @else
+                                    <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                                @endif
                             </div>
                             <div class="job_title">
                                 <h3>{{$post->title}}</h3>

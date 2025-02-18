@@ -69,7 +69,11 @@
                        <h3>Personal Details</h3>
 
                        <div class="img_section">
-                           <img src="{{ asset(auth()->user()->image) }}" alt="">
+                            @if(!empty(auth()->user()->image))
+                                <img src="{{ asset(auth()->user()->image) }}" alt="User Image">
+                            @else
+                                <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                            @endif
                        </div>
 
 
@@ -178,7 +182,11 @@
 
 
                         <div class="img_section">
-                            <img src="{{ asset(auth()->user()->image) }}" alt="">
+                            @if(!empty(auth()->user()->image))
+                                <img src="{{ asset(auth()->user()->image) }}" alt="User Image">
+                            @else
+                                <img src="{{ asset('no_pro_img.png') }}" alt="Default Image">
+                            @endif
                             <span onclick="change_img_func()">Change Profile Image</span>
                         </div>
 
