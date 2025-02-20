@@ -12,6 +12,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserDashboardController;
 use App\Http\Controllers\FamilyMemberController;
 use App\Http\Controllers\PackagesController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -58,15 +59,20 @@ Route::middleware('auth:web')->group(function () {
     
     Route::get('/pro/care/giver', [SubscriptionController::class, 'index'])->name('pro.plane');
     Route::get('/my_enrolled/job', [JobController::class, 'taker_enrolled'])->name('taker_enrolled');
-
+    
     
     // Post
     Route::resource('/post', PostController::class);
     Route::resource('/job', JobController::class);
     Route::resource('/member', FamilyMemberController::class);
     Route::get('/requested/accepted/job', [JobController::class, 'requested_job'])->name('requested_job');
+    
+    // subscription
+    Route::get('/pro/subscripton/payment/{package_id}', [PaymentController::class, 'initiatePayment'])->name('subscribe.package');
 });
 
+Route::get('/payment/success', [PaymentController::class, 'success'])->name('payment.success');
+Route::get('/payment/cencel', [PaymentController::class, 'cancel'])->name('payment.cancel');
 
 Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function () {
     Route::get('/dashboard', function () {
