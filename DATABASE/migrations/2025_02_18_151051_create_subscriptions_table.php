@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('orderId')->nullable();
             $table->string('trxnId')->nullable();
             $table->string('pay_status')->nullable();
+            $table->string('method')->nullable();
             $table->enum('status', ['enabled', 'disabled'])->nullable();
             $table->timestamps();
         });
